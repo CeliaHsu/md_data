@@ -1,0 +1,2227 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+
+<style type="text/css">
+body {
+-moz-user-select : none;
+-webkit-user-select: none;
+}
+</style>
+
+<script type="text/javascript">
+function iEsc(){ return false; }
+function iRec(){ return true; }
+function DisableKeys() {
+if(event.ctrlKey || event.shiftKey || event.altKey) {
+window.event.returnValue=false;
+iEsc();}
+}
+document.ondragstart=iEsc;
+document.onkeydown=DisableKeys;
+document.oncontextmenu=iEsc;
+if (typeof document.onselectstart !="undefined")
+document.onselectstart=iEsc;
+else{
+document.onmousedown=iEsc;
+document.onmouseup=iRec;
+}
+function DisableRightClick(qsyzDOTnet){
+if (window.Event){
+if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+iEsc();}
+else
+if (event.button == 2 || event.button == 3){
+event.cancelBubble = true
+event.returnValue = false;
+iEsc();}
+}
+</script>
+
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../index.htm">
+<link rel=File-List href=filelist.xml>
+<title>建築配置方案建築計算總表</title>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:新細明體, serif;
+	mso-font-charset:136;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(4);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../index.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#56C7AA" vlink="#59A8D1" class=xl82>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1138 style='border-collapse:
+ collapse;table-layout:fixed;width:857pt'>
+ <col class=xl82 width=21 style='mso-width-source:userset;mso-width-alt:672;
+ width:16pt'>
+ <col class=xl82 width=7 style='mso-width-source:userset;mso-width-alt:224;
+ width:5pt'>
+ <col class=xl82 width=25 style='mso-width-source:userset;mso-width-alt:800;
+ width:19pt'>
+ <col class=xl123 width=61 span=3 style='mso-width-source:userset;mso-width-alt:
+ 1952;width:46pt'>
+ <col class=xl123 width=37 style='mso-width-source:userset;mso-width-alt:1184;
+ width:28pt'>
+ <col class=xl124 width=61 style='mso-width-source:userset;mso-width-alt:1952;
+ width:46pt'>
+ <col class=xl125 width=61 style='mso-width-source:userset;mso-width-alt:1952;
+ width:46pt'>
+ <col class=xl126 width=49 style='mso-width-source:userset;mso-width-alt:1568;
+ width:37pt'>
+ <col class=xl123 width=61 style='mso-width-source:userset;mso-width-alt:1952;
+ width:46pt'>
+ <col class=xl123 width=69 span=4 style='mso-width-source:userset;mso-width-alt:
+ 2208;width:52pt'>
+ <col class=xl82 width=69 style='mso-width-source:userset;mso-width-alt:2208;
+ width:52pt'>
+ <col class=xl82 width=72 span=4 style='width:54pt'>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td colspan=15 height=26 class=xl177 width=781 style='border-right:.5pt solid black;
+  height:20.1pt;width:589pt'>沿街式佈置B／獨棟住宅</td>
+  <td class=xl82 width=69 style='width:52pt'></td>
+  <td class=xl82 width=72 style='width:54pt'></td>
+  <td class=xl82 width=72 style='width:54pt'></td>
+  <td class=xl82 width=72 style='width:54pt'></td>
+  <td class=xl82 width=72 style='width:54pt'></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:17.1pt'>
+  <td colspan=3 rowspan=2 height=44 class=xl180 style='border-bottom:.5pt solid black;
+  height:34.2pt'>戶號</td>
+  <td class=xl83 style='border-top:none'>基地面積</td>
+  <td class=xl83 style='border-top:none;border-left:none'>法定空地</td>
+  <td class=xl83 style='border-top:none;border-left:none'>綠化面積</td>
+  <td class=xl83 style='border-top:none;border-left:none'>喬木</td>
+  <td class=xl84 style='border-top:none;border-left:none'>允建面積</td>
+  <td class=xl85 style='border-top:none;border-left:none'>建築面積</td>
+  <td rowspan=2 class=xl184 style='border-bottom:.5pt solid black;border-top:
+  none'>建敝率</td>
+  <td class=xl83 style='border-top:none;border-left:none'>空地面積</td>
+  <td class=xl83 style='border-top:none;border-left:none'>1/3喬木</td>
+  <td class=xl83 style='border-top:none;border-left:none'>1/5喬木</td>
+  <td class=xl83 style='border-top:none;border-left:none'>每戶種植</td>
+  <td class=xl87 style='border-top:none'>三戶種植</td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:17.1pt'>
+  <td height=22 class=xl88 style='height:17.1pt'>（㎡）</td>
+  <td class=xl88 style='border-left:none'>（㎡）</td>
+  <td class=xl88 style='border-left:none'>（㎡）</td>
+  <td class=xl88 style='border-left:none'>（棵）</td>
+  <td class=xl89 style='border-left:none'>（㎡）</td>
+  <td class=xl90 style='border-left:none'>（㎡）</td>
+  <td class=xl88 style='border-left:none'>（㎡）</td>
+  <td class=xl88 style='border-left:none'>（棵）</td>
+  <td class=xl88 style='border-left:none'>（棵）</td>
+  <td class=xl88 style='border-left:none'>一棵喬木</td>
+  <td class=xl92>一棵喬木</td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=23 height=420 class=xl185 style='border-bottom:.5pt solid black;
+  height:328.2pt'>A區</td>
+  <td class=xl93 style='border-left:none'>　</td>
+  <td class=xl94>A1</td>
+  <td class=xl88>1,006.89 </td>
+  <td class=xl88 style='border-left:none'>604.13 </td>
+  <td class=xl88 style='border-left:none'>302.07 </td>
+  <td class=xl95 style='border-left:none'>25 </td>
+  <td class=xl89 style='border-left:none'>402.75 </td>
+  <td class=xl90 style='border-left:none'>402.00 </td>
+  <td class=xl96 style='border-left:none'>39.93%</td>
+  <td class=xl88 style='border-left:none'>604.89 </td>
+  <td class=xl95 style='border-left:none'>8 </td>
+  <td class=xl95 style='border-left:none'>5 </td>
+  <td class=xl95 style='border-left:none'>1 </td>
+  <td class=xl95 style='border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A2</td>
+  <td class=xl97 style='border-top:none'>1,000.11 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>600.07 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.04 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>400.05 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>399.60 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>600.51 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A3</td>
+  <td class=xl97 style='border-top:none'>1,004.13 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.48 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.24 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.65 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.34 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.79 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A4</td>
+  <td class=xl97 style='border-top:none'>1,003.92 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.35 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.18 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.57 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.35 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.57 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A5</td>
+  <td class=xl97 style='border-top:none'>1,006.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.83 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.92 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.55 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.80 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.93%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.58 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A6</td>
+  <td class=xl97 style='border-top:none'>1,015.42 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.25 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.63 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>406.17 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>406.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.42 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A7</td>
+  <td class=xl97 style='border-top:none'>1,005.55 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.33 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.67 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.22 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.08 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.47 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A8</td>
+  <td class=xl97 style='border-top:none'>1,014.96 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.98 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.49 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.98 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.30 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.93%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.66 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A9</td>
+  <td class=xl97 style='border-top:none'>1,012.64 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.58 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.79 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.05 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.37 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.93%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.26 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A10</td>
+  <td class=xl97 style='border-top:none'>1,010.08 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.05 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.03 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.03 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.53 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.56 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A11</td>
+  <td class=xl97 style='border-top:none'>1,012.55 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.53 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.77 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.02 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.93 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.61 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A12</td>
+  <td class=xl97 style='border-top:none'>1,009.11 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.47 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.74 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.64 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.24 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.87 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A13</td>
+  <td class=xl97 style='border-top:none'>1,012.16 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.30 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.65 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.86 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.24 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.84%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.92 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A14</td>
+  <td class=xl97 style='border-top:none'>1,006.63 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.98 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.99 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.65 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.91 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.93%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.72 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A15</td>
+  <td class=xl97 style='border-top:none'>1,019.90 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>611.94 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>305.97 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>407.96 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>407.89 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>612.02 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A16</td>
+  <td class=xl97 style='border-top:none'>1,014.36 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.62 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.31 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.74 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.34 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.02 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A17</td>
+  <td class=xl97 style='border-top:none'>1,012.58 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.55 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.78 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.03 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.97 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.62 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A18</td>
+  <td class=xl97 style='border-top:none'>1,004.81 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.88 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.44 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.92 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>400.96 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.90%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.85 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A19</td>
+  <td class=xl97 style='border-top:none'>1,007.31 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.39 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.20 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.93 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.75 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.88%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.57 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A20</td>
+  <td class=xl97 style='border-top:none'>1,015.47 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.28 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.64 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>406.19 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.86 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.62 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A21</td>
+  <td class=xl97 style='border-top:none'>1,006.03 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.62 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.81 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.41 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.29 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.74 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl93 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl94>A22</td>
+  <td class=xl97 style='border-top:none'>1,581.83 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>949.10 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>474.55 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>38 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>632.73 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>632.50 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>949.33 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>13 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl187 style='height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none'>22,782.82 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>13,669.71 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>6,834.91 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>563 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>9,113.13 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>9,102.23 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>13,680.60 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>181 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>113 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>22 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=11 height=204 class=xl172 style='border-bottom:.5pt solid black;
+  height:159.0pt;border-top:none'>B區</td>
+  <td class=xl105 style='border-top:none;border-left:none'>　</td>
+  <td class=xl106 style='border-top:none'>B1</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,433.14 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>859.88 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>429.94 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>35 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>573.26 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>573.13 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>860.01 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>12 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>7 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B2</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,439.20 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>863.52 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>431.76 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>35 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>575.68 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>575.09 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>864.11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>12 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>7 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B3</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,169.47 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>701.68 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>350.84 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>29 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>467.79 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>467.30 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>702.17 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>6 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B4</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,012.71 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.63 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.82 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.09 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.71 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B5</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,011.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.83 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.42 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.55 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.98 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B6</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,007.74 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.65 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.33 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.10 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.35 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.83%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.39 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B7</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,008.68 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.21 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.61 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.47 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.76 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.93%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.92 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B8</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,008.10 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.86 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.43 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.24 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.13 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.98 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B9</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,012.13 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.28 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.64 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.85 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.60 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.53 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl107 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl108>B10</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,003.13 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.88 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.94 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.25 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.10 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.03 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl175 style='border-right:.5pt solid black;
+  height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none;border-left:none'>11,105.69 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>6,663.42 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>3,331.73 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>274 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>4,442.28 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>4,437.86 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>6,667.83 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>90 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>55 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>3 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=27 height=492 class=xl157 style='border-bottom:.5pt solid black;
+  height:384.6pt;border-top:none'>C區</td>
+  <td class=xl109 style='border-top:none;border-left:none'>　</td>
+  <td class=xl110 style='border-top:none'>C1</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,007.69 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.62 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.31 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.08 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.69 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C2</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,289.62 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>773.77 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>386.89 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>31 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>515.85 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>515.25 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>774.37 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>6 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C3</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,281.15 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>768.69 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>384.35 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>31 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>512.46 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>511.80 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>769.35 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>6 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C4</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,005.66 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.39 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.70 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.26 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.70 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.94%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.96 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C5</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,011.33 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.80 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.40 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.53 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.10 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.23 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C6</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,013.04 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.82 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.91 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.22 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.91 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.13 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C7</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,018.37 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>611.02 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>305.51 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>407.35 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>407.29 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>611.08 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C8</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,014.18 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.51 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.26 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.67 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.34 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.84 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C9</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,003.80 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.28 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.14 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.52 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.20 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.60 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C10</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,010.63 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.19 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.25 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.63 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C11</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,011.72 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.03 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.52 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.69 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.35 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.37 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C12</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,006.86 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.12 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.06 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.75 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.60 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.26 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C13</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,016.42 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.85 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.93 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>406.57 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>406.50 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.92 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C14</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,002.55 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.53 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.77 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.02 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>400.49 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.07 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C15</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,002.30 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.69 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>400.92 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>400.72 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.58 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C16</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,001.95 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.17 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.59 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>400.78 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>400.38 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.57 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C17</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,016.19 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>609.71 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.86 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>406.47 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>406.07 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>610.11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C18</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,012.15 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.29 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.65 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.86 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.55 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.60 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C19</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,004.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.63 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.32 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.75 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.10 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.94%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.28 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C20</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,307.49 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>784.49 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>392.25 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>32 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>522.99 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>522.15 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.94%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>785.34 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>6 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C21</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,304.91 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>782.94 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>391.47 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>32 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>521.96 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>521.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>783.51 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>6 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C22</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,003.10 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>601.86 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.93 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.24 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.07 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.04 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C23</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,012.19 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.31 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>303.66 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>404.88 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>404.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>607.79 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C24</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,005.42 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.25 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.63 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.17 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.81 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.61 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C25</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,008.37 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.02 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.51 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.35 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.37 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl111 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl112>C26</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,003.51 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.11 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.06 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.40 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.20 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.31 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl160 style='border-right:.5pt solid black;
+  height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none;border-left:none'>27,374.97 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>16,424.97 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>8,212.56 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>676 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>10,949.99 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>10,940.36 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>16,434.61 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>218 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>134 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>26 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=11 height=204 class=xl162 style='border-bottom:.5pt solid black;
+  height:159.0pt;border-top:none'>D區</td>
+  <td class=xl113 style='border-top:none;border-left:none'>　</td>
+  <td class=xl114 style='border-top:none'>D1</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,005.01 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.01 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.51 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.00 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.65 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.36 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D2</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,013.71 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.22 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>304.11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>405.48 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>405.00 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>608.71 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D3</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,004.08 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.45 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.23 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>401.63 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.41 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>602.67 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D4</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,008.87 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.32 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.66 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.55 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.30 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.57 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D5</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,008.80 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.28 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.64 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.52 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.40 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D6</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,005.40 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.24 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.62 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.16 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.80 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.96%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.60 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D7</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,009.49 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.70 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.85 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.80 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.20 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.94%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.29 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D8</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,007.00 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.20 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.10 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.80 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.50 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>604.50 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D9</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,006.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.83 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.92 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.55 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>402.50 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.88 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl115 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl116>D10</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,465.21 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>879.13 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>439.57 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>36 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>586.08 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>585.20 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.94%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>880.01 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>12 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>7 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl165 style='border-right:.5pt solid black;
+  height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none;border-left:none'>10,533.94 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>6,320.38 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>3,160.21 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>261 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>4,213.58 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>4,209.96 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>6,323.98 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>84 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>52 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>3 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=6 height=114 class=xl167 style='border-bottom:.5pt solid black;
+  height:88.5pt;border-top:none'>E區</td>
+  <td class=xl117 style='border-top:none;border-left:none'>　</td>
+  <td class=xl118 style='border-top:none'>E1</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,001.27 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>600.76 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>300.38 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>400.51 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>400.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>600.87 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl119 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl120>E2</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,009.44 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>605.66 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>302.83 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>403.78 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>403.30 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.95%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>606.14 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl119 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl120>E3</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,005.38 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.23 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>301.62 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>402.15 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>401.96 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>603.41 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl119 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl120>E4</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,088.59 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>653.15 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>326.58 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>27 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>435.43 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>435.06 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.97%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>653.53 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>9 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl119 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl120>E5</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,088.22 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>652.93 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>326.47 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>27 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>435.29 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>435.18 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.99%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>653.05 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>9 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl170 style='border-right:.5pt solid black;
+  height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none;border-left:none'>5,192.89 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>3,115.73 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>1,557.88 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>129 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>2,077.16 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>2,075.90 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>3,117.00 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>42 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>3 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td rowspan=3 height=60 class=xl151 style='border-bottom:.5pt solid black;
+  height:46.2pt'>F區</td>
+  <td class=xl121 style='border-left:none'>　</td>
+  <td class=xl122>F1</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,028.63 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>617.18 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>308.59 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>411.45 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>411.20 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>617.43 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=18 style='mso-height-source:userset;mso-outline-level:2;height:
+  14.1pt'>
+  <td height=18 class=xl121 style='height:14.1pt;border-left:none'>　</td>
+  <td class=xl122>F2</td>
+  <td class=xl97 style='border-top:none;border-left:none'>1,021.51 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>612.91 </td>
+  <td class=xl97 style='border-top:none;border-left:none'>306.46 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>25 </td>
+  <td class=xl99 style='border-top:none;border-left:none'>408.60 </td>
+  <td class=xl100 style='border-top:none;border-left:none'>408.40 </td>
+  <td class=xl101 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl97 style='border-top:none;border-left:none'>613.11 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>8 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>5 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl98 style='border-top:none;border-left:none'>0 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;mso-outline-level:1;height:
+  18.0pt'>
+  <td colspan=2 height=24 class=xl153 style='border-right:.5pt solid black;
+  height:18.0pt;border-left:none'>合計</td>
+  <td class=xl102 style='border-top:none;border-left:none'>2,050.14 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>1,230.09 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>615.05 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>50 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>820.06 </td>
+  <td class=xl102 style='border-top:none;border-left:none'>819.60 </td>
+  <td class=xl104 style='border-top:none;border-left:none'>39.98%</td>
+  <td class=xl102 style='border-top:none;border-left:none'>1,230.54 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>16 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>10 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>2 </td>
+  <td class=xl103 style='border-top:none;border-left:none'>1 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.95pt'>
+  <td colspan=3 height=33 class=xl155 style='height:24.95pt'>加總</td>
+  <td class=xl88 style='border-left:none'>79,040.46 </td>
+  <td class=xl88 style='border-left:none'>47,424.30 </td>
+  <td class=xl88 style='border-left:none'>23,712.34 </td>
+  <td class=xl95 style='border-left:none'>1,953 </td>
+  <td class=xl88 style='border-left:none'>31,616.19 </td>
+  <td class=xl88 style='border-left:none'>31,585.91 </td>
+  <td class=xl96 style='border-left:none'>39.96%</td>
+  <td class=xl88 style='border-left:none'>47,454.56 </td>
+  <td class=xl95 style='border-left:none'>631 </td>
+  <td class=xl95 style='border-left:none'>389 </td>
+  <td class=xl95 style='border-left:none'>75 </td>
+  <td class=xl95 style='border-left:none'>26 </td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=6 style='mso-height-source:userset;height:5.1pt'>
+  <td height=6 class=xl82 style='height:5.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td colspan=5 height=24 class=xl156 style='height:18.0pt'>附註：基地通路共19001.93㎡</td>
+  <td class=xl127></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:20.1pt'>
+  <td height=26 class=xl82 style='height:20.1pt'></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl124></td>
+  <td class=xl125></td>
+  <td class=xl126></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl123></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+  <td class=xl82></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=21 style='width:16pt'></td>
+  <td width=7 style='width:5pt'></td>
+  <td width=25 style='width:19pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=37 style='width:28pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=49 style='width:37pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=69 style='width:52pt'></td>
+  <td width=69 style='width:52pt'></td>
+  <td width=69 style='width:52pt'></td>
+  <td width=69 style='width:52pt'></td>
+  <td width=69 style='width:52pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
